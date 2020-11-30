@@ -28,9 +28,9 @@ const MovieDetails: React.FC = () => {
       // const recast = cast[0];
       setActors([...actors, ...cast]);
     });
-  }, [params.movie, actors]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [...actors, params.movie]);
 
-  console.log(actors);
   return (
     <>
       <Header>
