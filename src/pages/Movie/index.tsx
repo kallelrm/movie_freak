@@ -28,7 +28,7 @@ const MovieDetails: React.FC = () => {
       // const recast = cast[0];
       setActors([...actors, ...cast]);
     });
-  }, [params.movie]);
+  }, [params.movie, actors]);
 
   console.log(actors);
   return (

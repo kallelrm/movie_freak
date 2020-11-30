@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import cameraBackground from '../assets/camera-background.svg';
-
 export default createGlobalStyle`
   * {
     margin: 0;
