@@ -29,7 +29,7 @@ const MovieDetails: React.FC = () => {
       setActors([...actors, ...cast]);
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [...actors, params.movie]);
+  }, [params.movie, ...actors]);
 
   return (
     <>
